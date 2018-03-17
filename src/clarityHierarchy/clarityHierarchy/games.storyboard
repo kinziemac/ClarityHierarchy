@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KxJ-Yq-Tv6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--hierarchy-->
+        <scene sceneID="ZBO-gQ-lAT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="hierarchy" id="wCv-Zj-Dk7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jgx-Jj-KMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="-1672"/>
+        </scene>
+        <!--tileGame-->
+        <scene sceneID="uGM-2h-tU1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="tileGame" id="F9e-Gt-TiM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRg-fa-YoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034" y="-1485"/>
+        </scene>
+        <!--mathGame-->
+        <scene sceneID="WgL-XB-jIZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="mathGame" id="Ic8-gs-nPe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMn-2t-Xf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2425" y="-1363"/>
+        </scene>
+        <!--cashGame-->
+        <scene sceneID="5B7-MW-1iW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="cashGame" id="qZb-HM-jfB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3W-fG-9lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2267" y="-1226"/>
+        </scene>
+        <!--Games Menu Controller-->
+        <scene sceneID="zDf-mh-gYf">
+            <objects>
+                <viewController storyboardIdentifier="gamesList" id="KxJ-Yq-Tv6" customClass="gamesMenuController" customModule="clarityHierarchy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4oK-fV-ipl"/>
+                        <viewControllerLayoutGuide type="bottom" id="BkH-ss-hA5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jZ1-7R-SFa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpn-uX-KqT">
+                                <rect key="frame" x="96" y="30" width="182" height="74"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="jjE-hH-1YI"/>
+                                    <constraint firstAttribute="width" constant="182" id="y1k-Ak-p5C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9U-ng-jZt">
+                                <rect key="frame" x="26" y="622" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KCU-fL-QgW"/>
+                                    <constraint firstAttribute="width" constant="89" id="Z4g-Ow-vNV"/>
+                                </constraints>
+                                <state key="normal" title="Back to Main">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnToMenu:" destination="KxJ-Yq-Tv6" eventType="touchUpInside" id="Oei-r8-7Ye"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="3US-vy-k75">
+                                <rect key="frame" x="33" y="158" width="310" height="352"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9gH-Sn-dZ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="156"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aEU-E4-Mqk">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CC0-lO-KJ6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="125"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="125" id="tAx-zP-sPX"/>
+                                                            <constraint firstAttribute="width" constant="135" id="vZe-Vt-biw"/>
+                                                        </constraints>
+                                                        <state key="normal" image="UFO" backgroundImage="Background">
+                                                            <color key="titleColor" red="0.9302494993" green="1" blue="0.14712663710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="xhY-WY-j9A" kind="show" id="kT2-sh-YGO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atH-fM-biJ">
+                                                        <rect key="frame" x="50" y="135" width="35" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NGT-P0-FED">
+                                                <rect key="frame" x="175" y="0.0" width="135" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlr-ob-WaV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="125"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="135" id="bGq-GJ-u05"/>
+                                                            <constraint firstAttribute="height" constant="125" id="p4b-q8-eiX"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="mathMenu">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="Ic8-gs-nPe" kind="show" id="2Qg-fh-tcO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mental Math" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0s-vk-lax">
+                                                        <rect key="frame" x="0.0" y="135" width="135" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="UaV-XD-j1j">
+                                        <rect key="frame" x="0.0" y="196" width="310" height="156"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SZo-p7-7vN">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enu-a3-kj2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="125"/>
+                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="135" id="EXw-AW-UWj"/>
+                                                            <constraint firstAttribute="height" constant="125" id="Klo-eA-X7a"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Tile Game" image="tileGameSprite">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="F9e-Gt-TiM" kind="show" id="9uG-FC-6Mc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tile Match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs0-QI-Vwj">
+                                                        <rect key="frame" x="25" y="135" width="86" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="86" id="FNn-kC-CR5"/>
+                                                            <constraint firstAttribute="height" constant="21" id="vqW-yV-DFo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3aD-LF-FHM">
+                                                <rect key="frame" x="175" y="0.0" width="135" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHZ-8g-5lT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="126"/>
+                                                        <color key="backgroundColor" red="0.42661498949999999" green="1" blue="0.59052419440000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="125" id="173-78-SSJ"/>
+                                                            <constraint firstAttribute="width" constant="135" id="y88-XT-02P"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="0.42661498949999999" green="1" blue="0.59052419440000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Cash Grab" image="cashGrabSprite">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="qZb-HM-jfB" kind="show" id="BOh-SK-Tgv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash Grab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZi-Nc-HMd">
+                                                        <rect key="frame" x="25" y="136" width="85" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="85" id="9My-gF-cH4"/>
+                                                            <constraint firstAttribute="height" constant="20" id="rjK-dx-r9e"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99872619829999998" green="1" blue="0.99943602320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.9302494993" green="1" blue="0.14712663710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Bpn-uX-KqT" firstAttribute="top" secondItem="4oK-fV-ipl" secondAttribute="bottom" constant="10" id="6ER-c4-USB"/>
+                            <constraint firstItem="BkH-ss-hA5" firstAttribute="top" secondItem="g9U-ng-jZt" secondAttribute="bottom" constant="15" id="6p6-tp-d7R"/>
+                            <constraint firstItem="g9U-ng-jZt" firstAttribute="leading" secondItem="jZ1-7R-SFa" secondAttribute="leadingMargin" constant="10" id="N89-iV-7Qn"/>
+                            <constraint firstItem="Bpn-uX-KqT" firstAttribute="centerX" secondItem="jZ1-7R-SFa" secondAttribute="centerX" id="h35-Rn-3ek"/>
+                            <constraint firstItem="3US-vy-k75" firstAttribute="centerX" secondItem="jZ1-7R-SFa" secondAttribute="centerX" id="kVW-Li-Drn"/>
+                            <constraint firstItem="3US-vy-k75" firstAttribute="centerY" secondItem="jZ1-7R-SFa" secondAttribute="centerY" id="pDQ-zA-RdH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cashButton" destination="JHZ-8g-5lT" id="1PN-7J-Poc"/>
+                        <outlet property="gameTitle" destination="Bpn-uX-KqT" id="5gl-Se-z4O"/>
+                        <outlet property="mathButton" destination="mlr-ob-WaV" id="MG7-gj-tAZ"/>
+                        <outlet property="tileButton" destination="enu-a3-kj2" id="LRn-M0-tjg"/>
+                        <outlet property="ufoButton" destination="CC0-lO-KJ6" id="lAp-89-p07"/>
+                        <segue destination="YZk-l4-X2k" kind="show" identifier="endGame" id="9in-UJ-IJL"/>
+                        <segue destination="wCv-Zj-Dk7" kind="show" identifier="toHierarchy" id="zwa-BN-dGt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0GD-gW-FOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="-1231.0344827586207"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="BRe-25-1Ug">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="YZk-l4-X2k" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pgm-Nf-25O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="-801"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6YV-tp-Kdu">
+            <objects>
+                <viewController id="xhY-WY-j9A" customClass="UFOViewController" customModule="clarityHierarchy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k4l-6z-CJk"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Tb-aZ-nDS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tbg-Qo-nbS" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-NX-PS8">
+                                <rect key="frame" x="310" y="20" width="49" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <action selector="helppage:" destination="xhY-WY-j9A" eventType="touchUpInside" id="fOH-mh-8fX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHi-4Y-e0X">
+                                <rect key="frame" x="16" y="20" width="82" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="KxJ-Yq-Tv6" kind="show" id="g1e-ez-eTe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7z2-1T-ksm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424.8000000000002" y="-801.0494752623689"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1080" height="1920"/>
+        <image name="UFO" width="64" height="64"/>
+        <image name="cashGrabSprite" width="526" height="602"/>
+        <image name="mathMenu" width="118" height="105"/>
+        <image name="tileGameSprite" width="300" height="300"/>
+    </resources>
+</document>

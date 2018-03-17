@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Fdl-qY-lQa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Record a Voice Memo-->
+        <scene sceneID="SG3-WB-jt4">
+            <objects>
+                <viewController title="Record a Voice Memo" id="Fdl-qY-lQa" customClass="voiceMemoController" customModule="clarityHierarchy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XdF-WM-9eX"/>
+                        <viewControllerLayoutGuide type="bottom" id="i5g-gv-hR5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ir-IG-fUB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzc-W3-hli">
+                                <rect key="frame" x="61" y="160" width="252" height="107"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="gmD-dg-4il"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="Fdl-qY-lQa" eventType="touchUpInside" id="XYZ-hf-aUJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4s-mH-AFW">
+                                <rect key="frame" x="61" y="325" width="252" height="107"/>
+                                <color key="backgroundColor" red="0.42661498949999999" green="1" blue="0.59052419440000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="Fdl-qY-lQa" eventType="touchUpInside" id="txL-9x-cCL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fzc-W3-hli" firstAttribute="centerX" secondItem="2Ir-IG-fUB" secondAttribute="centerX" id="4Pt-am-JSG"/>
+                            <constraint firstItem="D4s-mH-AFW" firstAttribute="leading" secondItem="fzc-W3-hli" secondAttribute="leading" id="7XQ-IE-g8Q"/>
+                            <constraint firstItem="fzc-W3-hli" firstAttribute="top" secondItem="XdF-WM-9eX" secondAttribute="bottom" constant="140" id="C30-IF-iAx"/>
+                            <constraint firstItem="fzc-W3-hli" firstAttribute="leading" secondItem="2Ir-IG-fUB" secondAttribute="leadingMargin" constant="45" id="DPf-qs-Keg"/>
+                            <constraint firstItem="fzc-W3-hli" firstAttribute="trailing" secondItem="D4s-mH-AFW" secondAttribute="trailing" id="X90-YD-Fbf"/>
+                            <constraint firstItem="D4s-mH-AFW" firstAttribute="top" secondItem="fzc-W3-hli" secondAttribute="bottom" constant="58" id="qze-cO-8WJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="D4s-mH-AFW" id="9BH-Gv-sT7"/>
+                        <outlet property="recordButton" destination="fzc-W3-hli" id="NOo-tw-Wjr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufr-eS-n5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="-32.833583208395808"/>
+        </scene>
+    </scenes>
+</document>

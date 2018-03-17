@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jss-l4-idd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="DMx-vC-pfb">
+            <objects>
+                <viewController title="Settings" id="Jss-l4-idd" customClass="settingsViewController" customModule="clarityHierarchy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fcf-P0-d0G"/>
+                        <viewControllerLayoutGuide type="bottom" id="gby-HU-Ak2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DQo-e9-Zab">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5R-BL-LEq">
+                                <rect key="frame" x="16" y="129" width="343" height="61"/>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.7843137255" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="U9Y-V8-KXC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Message Board Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openBrowserEvent:" destination="Jss-l4-idd" eventType="touchUpInside" id="JDn-w3-dXS"/>
+                                    <segue destination="uLX-FU-6hr" kind="show" id="FBN-7e-XlL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYt-47-tBJ">
+                                <rect key="frame" x="88" y="384" width="198" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="P7E-DD-5It"/>
+                                    <constraint firstAttribute="width" constant="200" id="urI-dL-jLV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Message Board URL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaP-X2-lU2">
+                                <rect key="frame" x="83" y="319" width="208" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWw-7d-5JU">
+                                <rect key="frame" x="16" y="223" width="343" height="58"/>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.7843137255" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JSq-mG-7b7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="User Data Chart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uXS-4m-KSa" kind="show" id="lMm-ik-Bg3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfU-KB-zuX">
+                                <rect key="frame" x="16" y="599" width="65" height="48"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="hZa-oi-wQm" kind="show" id="dga-mE-4fw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.98039215690000003" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="o5R-BL-LEq" firstAttribute="leading" secondItem="DQo-e9-Zab" secondAttribute="leading" constant="20" id="3GF-5G-hWF"/>
+                            <constraint firstItem="o5R-BL-LEq" firstAttribute="centerX" secondItem="DQo-e9-Zab" secondAttribute="centerX" id="9kB-8g-e01"/>
+                            <constraint firstItem="vYt-47-tBJ" firstAttribute="top" secondItem="kaP-X2-lU2" secondAttribute="bottom" constant="10" id="CEV-Xz-2T2"/>
+                            <constraint firstItem="WWw-7d-5JU" firstAttribute="centerX" secondItem="DQo-e9-Zab" secondAttribute="centerX" id="DVj-E4-ve2"/>
+                            <constraint firstItem="WWw-7d-5JU" firstAttribute="leading" secondItem="DQo-e9-Zab" secondAttribute="leading" constant="20" id="Dd9-Fd-GVt"/>
+                            <constraint firstItem="kaP-X2-lU2" firstAttribute="leading" secondItem="DQo-e9-Zab" secondAttribute="leading" constant="50" id="FQV-L3-EqR"/>
+                            <constraint firstItem="WWw-7d-5JU" firstAttribute="top" secondItem="o5R-BL-LEq" secondAttribute="bottom" constant="30" id="Pir-Fy-jsD"/>
+                            <constraint firstItem="o5R-BL-LEq" firstAttribute="top" secondItem="fcf-P0-d0G" secondAttribute="bottom" constant="120" id="Q6j-ql-uE5"/>
+                            <constraint firstItem="vYt-47-tBJ" firstAttribute="leading" secondItem="DQo-e9-Zab" secondAttribute="leadingMargin" constant="70" id="TUw-Vy-mdH"/>
+                            <constraint firstItem="gby-HU-Ak2" firstAttribute="top" secondItem="sfU-KB-zuX" secondAttribute="bottom" constant="20" id="Vu2-wb-rE4"/>
+                            <constraint firstAttribute="trailing" secondItem="WWw-7d-5JU" secondAttribute="trailing" constant="20" id="kir-m4-aqr"/>
+                            <constraint firstAttribute="trailing" secondItem="kaP-X2-lU2" secondAttribute="trailing" constant="50" id="sb5-Ug-T8x"/>
+                            <constraint firstAttribute="trailing" secondItem="o5R-BL-LEq" secondAttribute="trailing" constant="20" id="tlz-Wb-yDr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vYt-47-tBJ" secondAttribute="trailing" constant="70" id="wc3-qc-29Q"/>
+                            <constraint firstItem="sfU-KB-zuX" firstAttribute="leading" secondItem="DQo-e9-Zab" secondAttribute="leading" constant="10" id="x7O-zz-fI9"/>
+                            <constraint firstItem="vYt-47-tBJ" firstAttribute="centerX" secondItem="DQo-e9-Zab" secondAttribute="centerX" id="xSL-XE-mNT"/>
+                            <constraint firstItem="kaP-X2-lU2" firstAttribute="centerX" secondItem="DQo-e9-Zab" secondAttribute="centerX" id="xeB-Yt-Vta"/>
+                            <constraint firstItem="kaP-X2-lU2" firstAttribute="top" secondItem="WWw-7d-5JU" secondAttribute="bottom" constant="40" id="xuD-2I-2DL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageBoardAccountButton" destination="o5R-BL-LEq" id="ITE-on-Wb3"/>
+                        <outlet property="messageBoardURLField" destination="vYt-47-tBJ" id="Je1-9f-UDJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7x-1N-c5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="-172.26386806596702"/>
+        </scene>
+        <!--barChart-->
+        <scene sceneID="rOq-7g-1pS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="barChart" id="uXS-4m-KSa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phM-Yu-CKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="-299"/>
+        </scene>
+        <!--DiscussionBoard-->
+        <scene sceneID="SsI-l4-9aX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DiscussionBoard" id="uLX-FU-6hr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2C-ss-dAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="-197"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="hY5-ww-ds8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="hZa-oi-wQm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTr-LH-xfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="115"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FFA1D521C4D2234E298B64DFFFA7188EBFC76B5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7F86ACA773C20F342735D4057A92D0446C1A7CAF" : 9223372036854775807,
+    "FFA1D521C4D2234E298B64DFFFA7188EBFC76B5C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C8978C9D-93BB-48D4-9C2E-2C8E1C94C28E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7F86ACA773C20F342735D4057A92D0446C1A7CAF" : "..\/..",
+    "FFA1D521C4D2234E298B64DFFFA7188EBFC76B5C" : "ProjectGroup6\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "clarityHierarchy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "src\/clarityHierarchy\/clarityHierarchy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kinziemac\/SFU.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7F86ACA773C20F342735D4057A92D0446C1A7CAF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SFU-2017-1-cmpt276\/ProjectGroup6.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FFA1D521C4D2234E298B64DFFFA7188EBFC76B5C"
+    }
+  ]
+}

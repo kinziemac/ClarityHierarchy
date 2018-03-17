@@ -1,0 +1,326 @@
+/*site-wide margins */
+div.margins{
+	max-width:700px;
+	margin: 10px 10px 10px 10px;
+	-webkit-text-size-adjust: 100%;
+	font-size:12;
+	font-family: "Times New Roman", Times, serif;
+}
+/*error/success dialogue boxes*/
+div.success{
+	justify-content:center;
+	display:flex;
+	width:100%;
+	background-color:lightgreen;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	font-size:1.5em;
+	margin-top:1em;
+	margin-bottom:1em;
+	flex-direction:column;
+	flex-wrap: wrap;
+}
+div.error{
+	justify-content:center;
+	display:flex;
+	width:100%;
+	background-color:lightcoral;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	font-size:1.5em;
+	margin-top:1em;
+	margin-bottom:1em;
+	flex-direction:column;
+	flex-wrap: wrap;
+}
+div.success-text, div.error-text{
+	flex:1;
+	width:100%;
+	text-align:center;
+	padding:0.5em;
+}
+div.success-title, div.error-title{
+	flex:1;
+	width:100%;
+	text-align:center;
+	padding-top:0.5em;
+}
+
+
+/*form style data*/
+span.field, p.required{ /*red asterisk*/
+	color:red;
+	font-weight:bold;
+}
+form.entry{ /*form flex container*/
+	text-align:center;
+	justify-content:center;
+	display:flex;
+	width:100%;
+	background-color:aliceblue;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	flex-flow:row wrap;
+	font-size:1.5em;
+}
+form input[type="text"], input[type="password"]{/*form input boxes*/
+	padding:0;
+	display:flex;
+	display:inline-block;
+	flex:1;
+	margin-right:1em;
+	overflow:hidden;
+}
+form div.submit{/*submit button container*/
+	margin-top:-0.5em;
+	width:100%;
+}
+form div.title{/*form title*/
+	text-align:center;
+	justify-content:center;
+}
+form textarea{/*form message box*/
+	padding:0;
+	display:flex;
+	display:inline-block;
+	flex:1;
+	margin-right:1em;
+}
+form input[type="submit"]{/**/
+	width:50%;
+}
+form p.title{
+	font-weight:bold;
+	margin-top:0.5em;
+	display:flex;
+	flex: 0 1 100%;
+	width:100%;
+}
+form p{
+	margin-top:-0.5em;
+	display:flex;
+	flex: 0 1 100%;
+	width:100%;
+	padding:0;
+}
+label.field{
+	margin-right:0.5em;
+	justify-content:flex-end;
+	display:flex;
+	min-width:5em;
+}
+div.subm{
+	display:flex;
+}
+
+/*flex container style data (topics)*/
+div.flex-container{
+	display:flex;
+	flex:1;
+	width:100%;
+	height:22em;
+	background-color:lightgrey;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	flex-direction:row;
+	flex-wrap: wrap;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+div.flex-title{
+	flex: 0 1 100%;
+	width:100%;
+	height:12%;
+	background-color:lightsalmon;
+	text-align:center;
+	font-size:2em;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+}
+div.flex-info{
+	flex-basis:20%;
+	height:88%;
+	background-color:lightcyan;
+	word-wrap:break-word;
+	overflow:auto;
+	font-size:1.25em;
+}
+div.flex-text{
+	flex-grow:5;
+	flex-shrink:1;
+	flex-basis:80%;
+	height:88%;
+	background-color:lightyellow;
+	word-wrap: break-word;
+	overflow-y:scroll;
+	font-size:1.5em;
+}
+
+/*flex container style data (topic listings)*/
+div.flex-container2{
+	display:flex;
+	flex:1;
+	height:5em;
+	background-color:lightgrey;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	flex-direction:row;
+	flex-wrap:wrap;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+div.flex-item1{
+	flex: 0 1 100%;
+	height:50%;
+	background-color:lightsalmon;
+	text-align:center;
+	justify-content:center;
+	font-size:2em;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+div.flex-item2{
+	flex: 1 0 auto;
+	height:50%;
+	background-color:lightyellow;
+	align-self:stretch;
+	font-size:1.5em;
+	text-align:center;
+	justify-content:center;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+div.logged_in{
+	display:flex;
+	flex:1;
+	flex-direction:row;
+	justify-content:space-between;
+}
+div.logged_text{
+	display:flex;
+	flex:1;
+	font-size:2em;
+}
+button.button_logout{
+	display:flex;
+	flex:1;
+	font-size:1.5em;
+}
+div.heading{
+	justify-content:center;
+	display:flex;
+	flex:1;
+	height:3em;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	flex-direction:row;
+}
+div.navigation{
+	display:flex;
+	flex:1;
+	height:3em;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	justify-content:space-between;
+	flex-direction:row;
+}
+div.nav_title{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	text-align:column;
+	font-size:2em;
+	font-weight:bold;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+button.button_left{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	text-align:column;
+	font-size:1.5em;
+}
+button.button_right{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	text-align:column;
+	font-size:1.5em;
+}
+div.edit_button{
+	flex-direction:column;
+	text-align:center;
+	justify-content:center;
+	display:flex;
+	flex:1;
+	padding:0.5em;
+}
+div.button_text{
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hiden;
+	word-wrap:normal;
+}
+button.button_edit{
+	padding:0;
+	text-align:center;
+	justify-content:center;
+	display:flex;
+	flex:1;
+	font-size:1em;
+	width:100%;
+	height:1.25em;
+}
+input.button_rate{
+	padding:0;
+	text-align:center;
+	justify-content:center;
+	display:flex;
+	flex:1;
+	font-size:1em;
+	width:100%;
+	height:1.25em;
+}
+
+button.button_toggle{
+	font-size:2em;
+	display:inline-block;
+}
+div.flexhide{
+	flex:1;
+	justify-content:center;
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	font-size:2em;
+	background-color:lavender;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	overflow:hidden;
+	white-space: nowrap;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+label.hideme{/*checkbox to hide/show replybox*/
+	cursor:pointer;
+	font-size:2em;
+}
+input[type=checkbox]{
+	position:relative;
+	top:-9999px;
+	left:-9999px;
+}
+input[type=checkbox]:checked ~ div.hideme{
+	display:none;
+}
+
