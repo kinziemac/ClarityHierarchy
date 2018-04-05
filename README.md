@@ -1,4 +1,1 @@
-# ProjectGroup6
-
-This is a readme.
-
+An iOS phone app featuring several games aimed to help reduce anxiety. 
